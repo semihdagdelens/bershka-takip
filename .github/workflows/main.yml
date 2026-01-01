@@ -1,0 +1,24 @@
+name: Bershka Stok Kontrol
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'  # Her 20 dakikada bir çalışır
+  workflow_dispatch:        # Elle çalıştırmak istersen diye buton ekler
+
+jobs:
+  check_stock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Çek
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Kütüphaneleri Yükle
+        run: pip install -r requirements.txt
+
+      - name: Botu Çalıştır
+        run: python main.py
