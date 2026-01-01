@@ -9,7 +9,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 # --- AYARLAR ---
 URUN_LISTESI = [
     "https://www.bershka.com/tr/f%C4%B1r%C3%A7alanm%C4%B1%C5%9F-efektli-desenli-s%C3%BCveter-c0p200314447.html?colorId=800",
-    "https://www.bershka.com/tr/teknik-spor-ceket-c0p189277209.html?colorId=401"
+    "https://www.bershka.com/tr/teknik-spor-ceket-c0p189277209.html?colorId=401",
+    "https://www.bershka.com/tr/vinil-efektli-suni-k%C3%BCrkl%C3%BC-yaka-ceket-c0p197723477.html?colorId=800"
 ]
 HEDEF_BEDEN = "M"
 TELEGRAM_TOKEN = "8495759843:AAHsFKuoITm87HdEBUEkAC8QiudWFWlddnc"
@@ -102,3 +103,4 @@ def toplu_kontrol():
 
 if __name__ == "__main__":
     toplu_kontrol()
+
